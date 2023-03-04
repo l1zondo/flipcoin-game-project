@@ -1,7 +1,7 @@
 let heads = 0;
 let tails = 0;
 let coin = document.querySelector(".coin");
-let flipBtn = document.querySelector(".flip-button");
+let flipBtn = document.querySelector("#flip-button");
 let resetBtn = document.querySelector("#reset-button");
 
 flipBtn.addEventListener("click",()=>{
@@ -23,10 +23,8 @@ flipBtn.addEventListener("click",()=>{
 });
 
 function updateStats(){
-    document.querySelector("#heads-count").textContent = `Heads: 
-    ${heads}`;
-    document.querySelector("#tails-count").textContent = `Tails: 
-    ${tails}`;
+    document.querySelector("#heads-count").textContent = `Heads: ${heads}`;
+    document.querySelector("#tails-count").textContent = `Tails: ${tails}`;
 }
 
 function disableButton(){
